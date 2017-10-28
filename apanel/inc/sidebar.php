@@ -15,16 +15,5 @@
             </ul>
           </li>
           <li> <a href="users.php"> <i class="icon-grid"></i>Users list</a></li>
-          <!-- <li> <a href="articles.php"> <i class="icon-grid"></i>Articles list</a></li> -->
-          <!-- <li> <a href="charts.html"> <i class="fa fa-bar-chart"></i>Charts </a></li> -->
-          <!-- <li> <a href="forms.html"> <i class="icon-padnote"></i>Forms </a></li> -->
-          <!-- <li> <a href="login.html"> <i class="icon-logout"></i>Login Page</a></li> -->
         </ul>
-<!--         <span class="heading">Extras</span>
-        <ul class="list-unstyled">
-          <li> <a href="#"> <i class="icon-settings"></i>Demo </a></li>
-          <li> <a href="#"> <i class="icon-writing-whiteboard"></i>Demo </a></li>
-          <li> <a href="#"> <i class="icon-light-bulb"></i>Demo </a></li>
-          <li> <a href="#"> <i class="icon-chart"></i>Demo </a></li>
-        </ul> -->
       </nav>
