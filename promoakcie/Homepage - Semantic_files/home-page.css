@@ -1,0 +1,21 @@
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.card.iphone-card {
+	box-shadow: none !important;
+}
+
+.card.iphone-card>.image {
+	height: 290px !important;
+	vertical-align: middle;
+	background: none !important;
+	box-shadow: none !important;
+}
+
+.card.iphone-card>.image>img{
+	display: block !important;
+	width: 100% !important;
+	height: 100% !important;
+
+}
