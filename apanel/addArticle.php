@@ -35,7 +35,8 @@ if($user->userGroup <= 1){
         </div>
         <ul class="breadcrumb">
           <div class="container-fluid">
-            <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+            <li class="breadcrumb-item"><a href="articles.php">Articles</a></li>
             <li class="breadcrumb-item active">New Article</li>
           </div>
         </ul>
