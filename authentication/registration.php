@@ -136,7 +136,7 @@
     </div>
   </div>
 </div>
-<?endif;?>
+<?php endif;?>
 
 <script src="authentication_files/ajaxAuthForm.js"></script>
 
