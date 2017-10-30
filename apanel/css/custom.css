@@ -1,1 +1,9 @@
 /* your styles go here */
+#file-control {
+	border: 1px solid rgb(68, 73, 81);
+    color: #fff;
+    background-color: #868e96;
+    border-color: #868e96;
+    display: inline-block;
+    width: 134px;
+} 

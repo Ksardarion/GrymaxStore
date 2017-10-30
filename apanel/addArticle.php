@@ -18,6 +18,7 @@ if($user->userGroup <= 1){
     <link rel="stylesheet" href="css/font.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Muli:300,400,700">
     <link rel="stylesheet" href="css/style.default.css" id="theme-stylesheet">
+    <link rel="stylesheet" href="css/cropper.min.css">
     <link rel="stylesheet" href="css/custom.css">
     <link rel="shortcut icon" href="img/favicon.ico">
   </head>
@@ -63,6 +64,33 @@ if($user->userGroup <= 1){
         </footer>
       </div>
     </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modal" role="dialog" aria-labelledby="modalLabel" tabindex="-1">
+      <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalLabel">Cropper</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="img-container">
+              <img id="image" src="../docs/images/picture.jpg" alt="Picture">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="button" id="btn-crop" class="btn btn-default">Select</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <img id="result" src="" alt="">
+
     <!-- Javascript files-->
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"> </script>
@@ -70,5 +98,7 @@ if($user->userGroup <= 1){
     <script src="vendor/jquery.cookie/jquery.cookie.js"> </script>
     <script src="vendor/chart.js/Chart.min.js"></script>
     <script src="js/front.js"></script>
+    <script src="js/cropper.min.js"></script>
+    <script src="js/cropImage.js"></script>
   </body>
 </html>
