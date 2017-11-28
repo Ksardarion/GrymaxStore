@@ -1,27 +1,33 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-	<!-- Standard Meta -->
-
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+	
+	<title><?=$configs['indexTitle']?></title>
 
-	<!-- Site Properties -->
-	<title>Homepage - Semantic</title>
+	<script type="text/javascript" src="/store/js/vendor/jquery-3.2.1.min.js"></script>
+	<script src="/store/js/vendor/zoom-slider/modernizr.custom.js"></script>
+	<!-- FOR CART ONLY -->
 
-	<script type="text/javascript" src="js/vendor/jquery-3.2.1.min.js"></script>
-	<script src="js/vendor/zoom-slider/modernizr.custom.js"></script>
-
-	<link rel="stylesheet" type="text/css" href="css/vendor/semantic.min.css">
+    <script type='text/javascript' src="/store/js/bootstrap.min.js"></script>
+    <script type='text/javascript' src="/store/js/jquery.mycart.js"></script>
+	<link rel="stylesheet" type="text/css" href="/store/css/vendor/semantic.min.css">
 
 	<!-- Feather Icons -->
-	<link rel="stylesheet" type="text/css" href="fonts/feather/style.css">
+	<link rel="stylesheet" type="text/css" href="/store/fonts/feather/style.css">
 
 	<!-- zoom slider -->
-	<link rel="stylesheet" type="text/css" href="css/vendor/zoom-slider/demo.css">
-	<link rel="stylesheet" type="text/css" href="css/vendor/zoom-slider/component.css">
-	<link rel="stylesheet" type="text/css" href="css/home-page.css">
+	<link rel="stylesheet" type="text/css" href="/store/css/vendor/zoom-slider/demo.css">
+	<link rel="stylesheet" type="text/css" href="/store/css/vendor/zoom-slider/component.css">
+	<link rel="stylesheet" type="text/css" href="/store/css/home-page.css">
 
 	<style type="text/css">
+
+		.modal-dialog {
+    		position: relative;
+    		top: 254px;
+    		left: 325px;
+		}
 
 		.hidden.menu {
 			display: none;
@@ -108,12 +114,22 @@
 			}
 		}
 
+  		.badge-notify{
+  		  background:red;
+  		  position:relative;
+  		  top: -20px;
+  		  right: 10px;
+  		}
+  		.my-cart-icon-affix {
+  		  position: fixed;
+  		  z-index: 999;
+  		}
 
 	</style>
 
-	<script src="js/vendor/semantic.min.js"></script>
+	<script src="/store/js/vendor/semantic.min.js"></script>
 
-	<script>
+<!-- 	<script>
         $(document)
             .ready(function() {
 
@@ -137,5 +153,5 @@
 
             })
         ;
-	</script>
+	</script> -->
 </head>

@@ -9,6 +9,7 @@ require_once "classes/db.class.php";
 require_once "classes/article.class.php";
 require_once 'classes/auth.class.php';
 require_once 'classes/user.class.php';
+require_once 'classes/grymaxShop.class.php';
 date_default_timezone_set("Europe/Kiev");
 $timeNow = date('Y-m-d');
 try {
@@ -28,4 +29,10 @@ $arts = new Articles();
 if (isset($_SESSION["user_id"])) {
 	$user = new User($_SESSION["user_id"]);
 }
-?>
+
+$qForGrymax = "SELECT * FROM `config`";
+
+$grymax = DB::connect()->prepare($qForGrymax);
+$grymax->execute();
+$configs = $grymax->fetch(PDO::FETCH_ASSOC);
+$grymaxShop = new grymaxShop();
