@@ -1,0 +1,18 @@
+.ui.cards>.card {
+	top: 16px;
+    width: 88%;
+	width: 80%;
+    font-size: 1em;
+    color: black;
+    margin: auto;
+}
+.newsTitle{
+    position: relative;
+    color: #4143b8;
+}
+.created{
+    position: relative;
+    right: -45%;
+    top: -25px;
+    color: grey;
+}
