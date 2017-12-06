@@ -2,12 +2,14 @@
     'use strict';
 
     var script = {};
-
+    // var loader = $('#loaderOverlay');
+    var loader = document.getElementById('loaderOverlay');
+    loader.setAttribute('style', 'display: block;');
     script.ajax = {
         errorMessage: tr('error:ajax-request'),
 
         ajaxSettings: {
-            $loaderEl: $('#loader'),
+            $loaderEl: $('.loaderOverlay'),
 
             beforeSend: function() {
                 this.$loaderEl.show();
@@ -129,6 +131,7 @@
             $formButtons.attr("disabled", "disabled");
 
             ajaxSettings.complete = function() {
+                loader.setAttribute('style', 'display: none;');
                 script.ajax.ajaxSettings.$loaderEl.hide();
                 $formInputs.removeAttr('readonly');
                 $formButtons.removeAttr('disabled');

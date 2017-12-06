@@ -6,10 +6,10 @@ class userAuth {
     private $db;
     private $user_id;
 
-    private $db_host = "localhost";
-    private $db_name = "store";
-    private $db_user = "root";
-    private $db_pass = "";
+    private $db_host = "grymax55.mysql.tools";
+    private $db_name = "grymax55_db";
+    private $db_user = "grymax55_db";
+    private $db_pass = "XQZYE5uU";
 
     private $is_authorized = false;
 
@@ -45,7 +45,7 @@ class userAuth {
     }
 
     public function getSalt($login) {
-        $query = "select salt from users where login = :login limit 1";
+        $query = "SELECT `salt` FROM `users` WHERE `login` = :login LIMIT 1";
         $sth = $this->db->prepare($query);
         $sth->execute(
             array(

@@ -1,7 +1,8 @@
 <?php
 
-include '../../sys/classes/Auth.class.php';
-include '../../sys/classes/AjaxRequest.class.php';
+require_once '../../sys/classes/grymaxShop.class.php';
+require_once '../../sys/classes/auth.class.php';
+require_once '../../sys/classes/ajaxRequest.class.php';
 
 if (!empty($_COOKIE['sid'])) {
     // check session id in cookies

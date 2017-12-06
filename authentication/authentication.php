@@ -28,11 +28,11 @@ if(userAuth::isAuthorized()){
   <link rel="stylesheet" type="text/css" href="./authentication_files/list.css">
   <link rel="stylesheet" type="text/css" href="./authentication_files/message.css">
   <link rel="stylesheet" type="text/css" href="./authentication_files/icon.css">
-    <script src="./authentication_files/jquery.min.js.завантаження"></script>
+  <script src="./authentication_files/jquery.min.js"></script>
 
-    <script src="./authentication_files/ajaxAuthForm.js"></script>
-  <script src="./authentication_files/form.js.завантаження"></script>
-  <script src="./authentication_files/transition.js.завантаження"></script>
+  <script src="./authentication_files/ajaxAuthForm.js"></script>
+  <script src="./authentication_files/form.js"></script>
+  <script src="./authentication_files/transition.js"></script>
 
   <style type="text/css">
     body {
@@ -40,6 +40,22 @@ if(userAuth::isAuthorized()){
     }
     body > .grid {
       height: 100%;
+    }
+    #loaderOverlay{
+        display: none;
+        position: absolute;
+        top: 0%;
+        height: 150%;
+        z-index: 1111;
+        background: white;
+        opacity: 0.6;
+    }
+    #loaderOverlay #loader{
+        position: relative;
+        display: block;
+        width: 423px;
+        height: 200px;
+        background: url(/images/loader.gif) 50% 50% no-repeat;
     }
     .image {
       margin-top: -100px;
@@ -98,6 +114,9 @@ if(userAuth::isAuthorized()){
       </div>
     </h2>
     <form class="ui large form ajax" method="post" action="authentication_files/authAjax.php">
+      <div id="loaderOverlay">
+          <div id="loader"></div>
+      </div>
       <div class="ui stacked segment">
         <div class="field">
           <div class="ui left icon input">

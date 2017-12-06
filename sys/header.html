@@ -12,6 +12,11 @@
     <script type='text/javascript' src="/js/bootstrap.min.js"></script>
     <script type='text/javascript' src="/js/jquery.mycart.js"></script>
   	<script type="text/javascript">
+		function showModalForShipping(){
+            $('.ui.basic.modal')
+                .modal('show')
+            ;
+		}
         function jsonQuery(products, totalPrice, totalQuantity, customer) {
 
             let dataForJSON = {"products": products, "totalPrice": totalPrice, "totalQuantity": totalQuantity, "customer": customer};
@@ -23,6 +28,7 @@
                 success: function (data) {
 //                    console.log('Server response: ');
 //                    console.log(data);
+                    showModalForShipping();
                 },
                 error: function(xhr, status, error){
                     console.log('Smh wrong');

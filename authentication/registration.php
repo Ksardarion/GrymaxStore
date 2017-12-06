@@ -29,9 +29,9 @@
   <link rel="stylesheet" type="text/css" href="./authentication_files/message.css">
   <link rel="stylesheet" type="text/css" href="./authentication_files/icon.css">
 
-  <script src="./authentication_files/jquery.min.js.завантаження"></script>
-  <script src="./authentication_files/form.js.завантаження"></script>
-  <script src="./authentication_files/transition.js.завантаження"></script>
+  <script src="./authentication_files/jquery.min.js"></script>
+  <script src="./authentication_files/form.js"></script>
+  <script src="./authentication_files/transition.js"></script>
 
   <style type="text/css">
     body {
@@ -93,12 +93,12 @@
 <div class="ui middle aligned center aligned grid">
   <div class="column">
     <h2 class="ui teal image header">
-      <img src="/store/images/Logo/logo.png" class="image">
+      <img src="/images/Logo/logo.png" class="image">
       <div class="content">
         Створити обліковий запис
       </div>
     </h2>
-    <form method="post" class=" ajax ui large form" action="authentication_files/authAjax.php">
+    <form method="post" class="ajax ui large form" action="authentication_files/authAjax.php">
       <div class="ui stacked segment">
         <div class="field">
           <div class="ui left icon input">
@@ -132,7 +132,7 @@
     </form>
 
     <div class="ui message">
-      <a href="/store/authentication/authentication.php">Увійти</a> в наявний обліковий запис
+      <a href="/authentication/authentication.php">Увійти</a> в наявний обліковий запис
     </div>
   </div>
 </div>
